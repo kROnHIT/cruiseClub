@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { CalendarIcon, WalletIcon, UserIcon, CurrencyRupeeIcon } from '@heroicons/react/24/solid'
+import { CalendarIcon, WalletIcon, UserIcon, CurrencyRupeeIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import { AiFillCloseCircle } from "react-icons/ai";
 
 function App() {
   const [top, setTop] = useState(true);
@@ -113,8 +114,51 @@ function App() {
         </div>
       </section>
 
-      <section className="">
-        <div class="grid grid-cols-1 md:grid-cols-7 gap-10 lg:py-24 lg:px-48 px-5 py-5">
+      <sesction className="">
+        <div class="container border-b-2 border-gray-400">
+          <ul class="flex justify-around px-32">
+            <li class="mr-3 px-8 py-6">
+              <a class="group text-sky-500 transition duration-300 font-semibold text-xl lg:text-2xl" href="#overview">
+                Overview
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </a>
+            </li>
+            <li class="mr-3 px-8 py-6">
+              <a class="group text-black hover:text-sky-500 transition duration-300 font-semibold text-xl lg:text-2xl" href="#Itinenary">
+                Itinenary
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </a>
+            </li>
+            <li class="mr-3 px-8 py-6">
+              <a class="group text-black hover:text-sky-500 transition duration-300 font-semibold text-xl lg:text-2xl" href="#Offers">
+                Offers
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </a>
+            </li>
+            <li class="mr-3 px-8 py-6">
+              <a class="group text-black hover:text-sky-500 transition duration-300 font-semibold text-xl lg:text-2xl" href="#Offers">
+                Costing
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </a>
+            </li>
+            <li class="mr-3 px-8 py-6">
+              <a class="group text-black hover:text-sky-500 transition duration-300 font-semibold text-xl lg:text-2xl" href="#Gallery">
+                Gallery
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </a>
+            </li>
+            <li class="mr-3 px-8 py-6">
+              <a class="group text-black hover:text-sky-500 transition duration-300 font-semibold text-xl lg:text-2xl" href="#Reviews">
+                Reviews
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </sesction>
+
+      <section className="overview">
+        <div class="grid grid-cols-1 md:grid-cols-7 gap-10 lg:pt-24 lg:px-48 px-5 py-5">
           <div class="col-span-4">
             <div>
               <h1 className="font-extrabold text-2xl lg:text-4xl vl">Overview</h1>
@@ -123,6 +167,7 @@ function App() {
             <div className="mt-8">
               <h1 className="font-extrabold text-2xl lg:text-4xl vl">Inclusion</h1>
             </div>
+
           </div>
           <div class="col-span-3">
             <div class="mx-auto max-w-4xl bg-white rounded-t-lg rounded-b-md drop-shadow-lg" >
@@ -182,9 +227,67 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="grid grid-cols-1 lg:px-48 px-5 pt-0">
+          <div className="mt-8">
+            <h1 className="font-extrabold text-2xl lg:text-4xl vl">
+              Exclusion
+            </h1>
+            <ul class="list-none mt-3">
+              <li class="text-base font-semibold mt-5 flex">
+                <AiFillCloseCircle size="24px" color="red" className="mr-4" />
+                Anything not mentioned in inclusions, Some onboard activities and entertainment are chargeable.
+              </li>
+              <li class="text-base font-semibold mt-3 flex">
+                <AiFillCloseCircle size="24px" color="red" className="mr-4" />
+                Meals other than specified in the itinerary
+              </li>
+              <li class="text-base font-semibold mt-3 flex">
+                <AiFillCloseCircle size="24px" color="red" className="mr-4" />
+                Airfare, Transfers and Sightseeing
+              </li>
+              <li class="text-base font-semibold mt-3 flex">
+                <AiFillCloseCircle size="24px" color="red" className="mr-4" />
+                Gratuities charge policy is subject to change at any time
+              </li>
+              <li class="text-base font-semibold mt-3 flex">
+                <AiFillCloseCircle size="24px" color="red" className="mr-4" />
+                All final prices are to be confirmed upon booking.
+              </li>
+              <li class="text-base font-semibold mt-3 flex">
+                <AiFillCloseCircle size="24px" color="red" className="mr-4" />
+                Booking is subject to cabin availability and capacity controlled. Some onboard activity is chargeable.
+              </li>
+              <li class="text-base font-semibold mt-3 flex">
+                <AiFillCloseCircle size="24px" color="red" className="mr-4" />
+                Items of personal nature viz, drinks, laundry, calls, etc.
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-
+      <section className="" id="Itinenary">
+        <div class="grid grid-cols-1 md:grid-cols-7 gap-10 lg:py-24 lg:px-48 px-5 py-5">
+          <div class="col-span-4">
+            <div className="mt-8">
+              <h1 className="font-extrabold text-2xl lg:text-4xl vl">
+                Itinenary
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="" id="Offers">
+        <div class="grid grid-cols-1 md:grid-cols-7 gap-10 lg:py-24 lg:px-48 px-5 py-5">
+          <div class="col-span-4">
+            <div className="mt-8">
+              <h1 className="font-extrabold text-2xl lg:text-4xl vl">
+                Pricing
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
