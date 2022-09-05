@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import Overview from "./overview";
 import Gallery from "./gallery";
 import Pricing from "./pricing";
+import Booking from "./booking";
+import Policy from "./policy";
 import Layout from "./layout";
 
 function App() {
@@ -109,6 +111,8 @@ function App() {
         </section>
         <Pricing />
         <Gallery />
+        <Booking />
+        <Policy />
       </Layout>
     </div>
   );

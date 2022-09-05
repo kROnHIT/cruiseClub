@@ -38,5 +38,35 @@
 }
 
 .footer-bg {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./assets//image/footer-bg.jpg)
+  background-image: linear-gradient(rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9)), url(./assets//image/footer-bg.jpg)
+}
+.booking-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets//image/cruise.jpg)
+}
+
+.carousel.carousel-slider {
+  padding-bottom: 20px;
+}
+.carousel.carousel-slider .control-arrow {
+  background: #0fa6e9 !important;
+  height: 50px !important;
+  width: 50px;
+  position: absolute;
+  top: 45% !important;
+  margin: 0px;
+  border-radius: 50%;
+}
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: #454545 !important;
+  outline: 0;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: -3% !important;
+}
+.carousel .slider-wrapper {
+  padding: 0 60px;
 }
