@@ -1,11 +1,12 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import Overview from "./overview";
 import Gallery from "./gallery";
 import Pricing from "./pricing";
 import Booking from "./booking";
 import Policy from "./policy";
+import Testimonial from "./testimonial";
 import Layout from "./layout";
-
+import { FaStar, FaRegClock } from "react-icons/fa";
 function App() {
   const [top, setTop] = useState(true);
 
@@ -20,24 +21,69 @@ function App() {
     <div className="App">
       <Layout>
         <section className="bg-white dark:bg-gray-900">
-          <div className="aspect-w-16 aspect-h-9">
+          {/* <div>
             <video
               autoPlay
-              loop
               muted
-              className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+              loop
+              className="relative object-cover z-0 top-0 left-0 right-0 bottom-0 "
             >
               <source
                 src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
                 type="video/mp4"
               />
             </video>
+            <div class="absolute bottom-0 z-2">
+              <h2>Your caption here</h2>
+            </div>
+          </div> */}
+          <div className="relative w-full">
+            <video autoPlay loop muted className="w-full">
+              <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div className="absolute bottom-0 bg-black/[.5] w-full grid lg:grid-cols-3 grid-cols-1 gap-y-4 py-12 px-4 lg:px-44 text-white">
+              <div className="col-span-2">
+                <p className="lg:text-3xl text-lg font-bold mb-3">
+                  Cruise from Kochi to Lakshadweep (4D/3N)
+                </p>
+                <div className="flex space-x-6">
+                  <p>
+                    <FaRegClock className="inline mr-1" />4 Days / 3 Night
+                  </p>
+                  <p>Kochi, Kerala</p>
+                  <div>
+                    <FaStar className="inline text-base text-yellow-500 mr-1" />
+                    <FaStar className="inline text-base text-yellow-500 mr-1" />
+                    <FaStar className="inline text-base text-yellow-500 mr-1" />
+                    <FaStar className="inline text-base text-yellow-500 mr-1" />
+                    <FaStar className="inline text-base text-gray-400" />
+                  </div>
+                  <p>
+                    Rating: 4 Star{" "}
+                    <a href="" className="text-sky-400 underline">
+                      ( See All Reviews )
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <a
+                  href="#book"
+                  className="text-white bg-sky-400 hover:bg-sky-500 transition duration-300 ease-in-out focus:ring-4 focus:ring-purple-300 font-medium rounded-sm text-lg px-10 lg:py-4 py-2"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
         <section className="">
           <div className="border-b border-gray-300">
-            <ul className="flex justify-around px-32">
+            <ul className="flex justify-around px-32 overflow-scroll">
               <li className="lg:mr-3 px-2 lg:px-8 py-6">
                 <a
                   className="group text-sky-500 transition duration-300 font-semibold lg:text-xl "
@@ -111,6 +157,7 @@ function App() {
         </section>
         <Pricing />
         <Gallery />
+        <Testimonial />
         <Booking />
         <Policy />
       </Layout>

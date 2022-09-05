@@ -1,14 +1,13 @@
 import React from "react";
-import {
-  CalendarIcon,
-  WalletIcon,
-  UserIcon,
-  CurrencyRupeeIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
 import { AiFillCloseCircle, AiOutlinePicture } from "react-icons/ai";
 import { BiBed } from "react-icons/bi";
-import { FaUtensils } from "react-icons/fa";
+import {
+  FaUtensils,
+  FaRegCalendarAlt,
+  FaUserAlt,
+  FaBed,
+  FaRupeeSign,
+} from "react-icons/fa";
 
 function Overview() {
   return (
@@ -75,45 +74,33 @@ function Overview() {
             <section className="p-4">
               <div className="mb-3 w-full">
                 <label className="relative flex">
-                  <CalendarIcon className="pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-3" />
-                  <select className="border border-gray-300 py-3 pl-14 rounded-sm text-gray-700 w-full">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                  <FaRegCalendarAlt className="pointer-events-none w-6 h-6 absolute top-1/2 text-gray-400 transform -translate-y-1/2 left-3" />
+                  <select className="border border-gray-300 py-3 pl-14 rounded-sm text-gray-400 w-full font-semibold">
+                    <option selected>Available Cruise Date</option>
                   </select>
                 </label>
               </div>
               <div className="mb-3 w-full">
                 <label className="relative flex">
-                  <CalendarIcon className="pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-3" />
-                  <select className="border border-gray-300 py-3 pl-14 rounded-sm text-gray-700 w-full">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                  <FaBed className="pointer-events-none w-6 h-6 absolute top-1/2 text-gray-400 transform -translate-y-1/2 left-3" />
+                  <select className="border border-gray-300 py-3 pl-14 rounded-sm text-gray-400 w-full font-semibold">
+                    <option selected>Select Roomm Type</option>
                   </select>
                 </label>
               </div>
               <div className="mb-3 w-full">
                 <label className="relative flex">
-                  <CalendarIcon className="pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-3" />
-                  <select className="border border-gray-300 py-3 pl-14 rounded-sm text-gray-700 w-full">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                  <FaUserAlt className="pointer-events-none w-6 h-6 absolute top-1/2 text-gray-400 transform -translate-y-1/2 left-3" />
+                  <select className="border border-gray-300 py-3 pl-14 rounded-sm text-gray-400 w-full font-semibold">
+                    <option selected>Number of People</option>
                   </select>
                 </label>
               </div>
               <div className="mb-3 w-full">
                 <label className="relative flex">
-                  <CalendarIcon className="pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-3" />
-                  <select className="border border-gray-300 py-3 pl-14 rounded-sm text-gray-700 w-full">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                  <FaRupeeSign className="pointer-events-none w-6 h-6 absolute top-1/2 text-gray-400 transform -translate-y-1/2 left-3" />
+                  <select className="border border-gray-300 py-3 pl-14 rounded-sm text-gray-400 w-full font-semibold">
+                    <option selected>Advance Payment</option>
                   </select>
                 </label>
               </div>

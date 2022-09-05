@@ -47,14 +47,14 @@ const imgData = [
 
 function Overview() {
   return (
-    <section className="">
+    <section className="gallery">
       <div className="grid grid-cols-1 lg:px-48 px-5 py-16">
         <h1 className="font-extrabold text-2xl lg:text-4xl vl">Gallery</h1>
         <p className="mb-8 mt-2">
           Lorem Ipsum is simply dummy text of the printing
         </p>
         <Tab.Group>
-          <Tab.List className="flex space-x-1 rounded-xl ">
+          <Tab.List className="flex space-x-1 rounded-xl overflow-scroll w-full">
             {title.map((item, index) => (
               <Tab key={index}>
                 {({ selected }) => (
@@ -86,7 +86,10 @@ function Overview() {
                 <div className="mt-5">
                   <div className="columns-2 md:columns-3 lg:columns-4">
                     {imgData.map((img) => (
-                      <div className="relative mb-4 before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+                      <div
+                        key={img}
+                        className="relative mb-4 before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-20"
+                      >
                         <img
                           className="w-full"
                           src={require(`../assets/image/${img}`)}
