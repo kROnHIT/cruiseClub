@@ -21,26 +21,10 @@ function App() {
     <div className="App">
       <Layout>
         <section className="bg-white dark:bg-gray-900">
-          {/* <div>
-            <video
-              autoPlay
-              muted
-              loop
-              className="relative object-cover z-0 top-0 left-0 right-0 bottom-0 "
-            >
-              <source
-                src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
-                type="video/mp4"
-              />
-            </video>
-            <div class="absolute bottom-0 z-2">
-              <h2>Your caption here</h2>
-            </div>
-          </div> */}
           <div className="relative w-full">
             <video autoPlay loop muted className="w-full">
               <source
-                src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
+                src={require("../assets/image/video.mp4")}
                 type="video/mp4"
               />
             </video>

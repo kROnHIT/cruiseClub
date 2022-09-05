@@ -80,8 +80,8 @@ function Overview() {
                 infiniteLoop={true}
                 showThumbs={false}
                 showStatus={false}
-                autoPlay={false}
-                interval={6100}
+                autoPlay={true}
+                interval={3100}
               >
                 <div className="mt-5">
                   <div className="columns-2 md:columns-3 lg:columns-4">
@@ -98,13 +98,28 @@ function Overview() {
                     ))}
                   </div>
                 </div>
-                <div>
-                  <p className="">Legend 2</p>
+                <div className="mt-5">
+                  <div className="columns-2 md:columns-3 lg:columns-4">
+                    {imgData.map((img) => (
+                      <div
+                        key={img}
+                        className="relative mb-4 before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-20"
+                      >
+                        <img
+                          className="w-full"
+                          src={require(`../assets/image/${img}`)}
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </Carousel>
             </Tab.Panel>
             <Tab.Panel>
-              <p>ff</p>
+              <p>No image of cruise</p>
+            </Tab.Panel>
+            <Tab.Panel>
+              <p>No image of cruise interior</p>
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>

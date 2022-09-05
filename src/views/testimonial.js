@@ -4,8 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import { FaStar } from "react-icons/fa";
 function Overview() {
   return (
-    <section className="">
-      <div className="grid grid-cols-1 lg:px-48 px-5 py-16">
+    <section className="testimonial" id="Reviews">
+      <div className="grid grid-cols-1 lg:px-48 px-5 py-16 mb-20">
         <h1 className="font-extrabold text-2xl lg:text-4xl vl">Testimonial</h1>
         <p className="mb-8 mt-2">
           Lorem Ipsum is simply dummy text of the printing

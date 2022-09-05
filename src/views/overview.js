@@ -41,7 +41,7 @@ function Overview() {
                 <div className="flex justify-center">
                   <BiBed size="50px" />
                 </div>
-                <p className="text-lg font-semibold leading-6">
+                <p className="text-md font-semibold leading-5 mt-4">
                   5 Star Accomodation
                 </p>
               </div>
@@ -49,7 +49,7 @@ function Overview() {
                 <div className="flex justify-center">
                   <FaUtensils size="50px" />
                 </div>
-                <p className="text-lg font-semibold leading-6">
+                <p className="text-md font-semibold leading-5 mt-4">
                   Breakfast and Dinner Included
                 </p>
               </div>
@@ -57,7 +57,7 @@ function Overview() {
                 <div className="flex justify-center">
                   <AiOutlinePicture size="50px" />
                 </div>
-                <p className="text-lg font-semibold leading-6">
+                <p className="text-md font-semibold leading-5 mt-4">
                   Onboard Entertainment
                 </p>
               </div>

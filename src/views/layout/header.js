@@ -86,7 +86,7 @@ function Header() {
                   <li>
                     <a
                       href="#"
-                      className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400 dark:border-gray-700"
+                      className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 lg:border-0 lg:p-0 "
                     >
                       Find Cruises
                     </a>
@@ -94,7 +94,7 @@ function Header() {
                   <li>
                     <a
                       href="#"
-                      className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400 dark:border-gray-700"
+                      className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 lg:border-0 lg:p-0 "
                     >
                       Offers
                     </a>
@@ -102,7 +102,7 @@ function Header() {
                   <li>
                     <a
                       href="#"
-                      className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400 dark:border-gray-700"
+                      className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 lg:border-0 lg:p-0 "
                     >
                       Tour Packages
                     </a>
@@ -110,7 +110,7 @@ function Header() {
                   <li>
                     <a
                       href="#"
-                      className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 lg:border-0 lg:p-0 dark:text-gray-400 dark:border-gray-700"
+                      className="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 lg:border-0 lg:p-0 "
                     >
                       Contact
                     </a>

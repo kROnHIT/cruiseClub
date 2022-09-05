@@ -6,18 +6,18 @@ import { FaRupeeSign } from "react-icons/fa";
 
 function Pricing() {
   return (
-    <section className="pricing bg-sky-50" id="Offers">
-      <div className="grid grid-cols-1 lg:px-48 px-5 pt-0">
+    <section className="pricing" id="Offers">
+      <div className="grid grid-cols-1 lg:px-48 px-5 py-24 drop-shadow">
         <div className="mt-10">
           <h1 className="font-extrabold text-2xl lg:text-4xl vl">Pricing</h1>
 
           <div className="container mx-auto bg-white rounded-md border mt-14 mb-14">
             <div className="grid grid-cols-3">
-              <div className="border-b border-gray-300 bg-sky-100 rounded-tl-md px-14 py-4 col-span-2">
+              <div className=" bg-cyan-50 rounded-tl-md px-14 py-4 col-span-2">
                 <p className="text-xl font-semibold">Room Type</p>
               </div>
-              <div className="border-l border-b border-gray-300 bg-sky-100 rounded-tr-md px-14 py-4">
-                <p className="text-xl font-semibold">Price</p>
+              <div className="border-l  bg-cyan-50 rounded-tr-md px-14 py-4">
+                <p className="text-xl font-semibold">Prices</p>
               </div>
             </div>
 
@@ -257,7 +257,7 @@ function Pricing() {
                   </div>
                 </div>
               </div>
-              <div className="border-l border-b border-gray-300">
+              <div className="border-l border-gray-300">
                 <div className="lg:px-20 lg:py-12 p-2">
                   <p className="text-gray-400 font-bold">per night</p>
                   <p className="line-through text-gray-400 font-bold mt-2">

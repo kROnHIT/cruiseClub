@@ -6,6 +6,7 @@ import {
   TiSocialFacebook,
   TiSocialYoutube,
 } from "react-icons/ti";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const linkList = [
   {
@@ -128,6 +129,16 @@ function Footer() {
                   <TiSocialYoutube size="25px" />
                 </li>
               </ul>
+            </div>
+            <div className="mt-5">
+              <p className="flex items-center font-bold">
+                <FaPhoneAlt size="17px" className="mr-4" />
+                +91226881111
+              </p>
+              <p className="flex items-center font-bold mt-2">
+                <FaEnvelope size="17px" className="mr-4" />
+                info@cordeliaruises.com
+              </p>
             </div>
           </div>
 
